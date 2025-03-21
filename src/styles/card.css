@@ -6,8 +6,6 @@
     @apply shadow-md p-4 bg-[#ffcd74]/50 grid grid-cols-1 gap-2 mx-auto min-w-[325px] max-w-xl rounded-2xl;
 }
 
-
-
 .info-container {
     @apply flex flex-col items-center md:flex-row md:justify-between gap-4;
 }

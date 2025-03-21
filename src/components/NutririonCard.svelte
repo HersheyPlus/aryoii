@@ -1,7 +1,6 @@
-<script>
+<script lang="ts">
   import { foods, approximateCalories } from "../data/foodData";
   import OvernightOats3D from "./three/OvernightOats3D.svelte";
-  import MoreFoodCard from "./MoreFoodCard.svelte";
 </script>
 
 <section class="container">
@@ -12,11 +11,12 @@
     </div>
       <div class="info-container">
         <div class="nutrition-info">
-          <h1 class="text-heading-base mb-2 md:mb-0">{food.name}</h1>
-          <p class="text-heading-sm">Carb: {food.carbohydrates} g</p>
-          <p class="text-heading-sm">Protein: {food.protein} g</p>
-          <p class="text-heading-sm">Fat: {food.fat} g</p>
-          <p class="text-heading-sm">Sugar: {food.sugar} g</p>
+          <h1 class="text-heading-lg mb-2 md:mb-0">{food.name}</h1>
+          <p class="text-heading-base">Carb: {food.carbohydrates} g</p>
+          <p class="text-heading-base">Protein: {food.protein} g</p>
+          <p class="text-heading-base">Fat: {food.fat} g</p>
+          <p class="text-heading-base">Sugar: {food.sugar} g</p>
+          <p class="text-heading-sm mt-1">* {food.notice}</p>
         </div>
         <div class="calories-info">
           <h1 class="text-heading-lg text-center md:text-left">
