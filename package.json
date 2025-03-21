@@ -17,6 +17,7 @@
     "@types/three": "^0.174.0",
     "svelte": "^5.20.2",
     "svelte-check": "^4.1.4",
+    "terser": "^5.39.0",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   },
