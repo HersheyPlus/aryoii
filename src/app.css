@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import 'tailwindcss';
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+@import "./styles//card.css";
+
+:root {
+  --theme-font-family-base: 'Poppins', sans-serif;
+
+  --theme-text-base-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --theme-text-base-line-height: 1.75;
+  --text-color--base: #9b2948;
+
+}
+
+body {
+  font-family: var(--theme-font-family-base);
+  color: var(--text-color--base);
+  @apply bg-[#ffedbf]/95
+}
+
+
+
+.text-responsive-sm {
+  font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  @apply font-normal;
+}
+
+.text-responsive-base {
+  font-size: var(--theme-text-base-size);
+  @apply font-normal;
+}
+
+.text-responsive-lg {
+  font-size: clamp(1.125rem, 1rem + 0.625vw, 1.375rem);
+  @apply font-medium;
+}
+
+.text-responsive-xl {
+  font-size: clamp(1.25rem, 1.125rem + 0.875vw, 1.75rem);
+  @apply font-semibold;
+}
+
+.text-responsive-2xl {
+  font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
+  @apply font-bold;
+}
+
+
+.text-heading-sm {
+  font-size: clamp(0.75rem, 0.7rem + 0.2vw, 1rem);
+  @apply font-medium;
+}
+
+.text-heading-base {
+  font-size: clamp(1.125rem, 1rem + 0.625vw, 1.375rem);
+  @apply font-semibold;
+}
+
+.text-heading-lg {
+  font-size: clamp(1.25rem, 1.125rem + 0.875vw, 1.75rem);
+  @apply font-bold;
+}
+
+.text-heading-xl {
+  font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
+  @apply font-bold;
+}
+
+
+.container {
+  @apply w-full mx-auto p-4 sm:p-6 md:p-8 max-w-2xl mb-3;
+}
+
+.logo-container {
+  @apply text-center;
+}
+
+.logo-text {
+  @apply text-4xl font-extrabold tracking-tight leading-none min-h-12;
+  letter-spacing: -0.02em;
+  font-family: "Agbalumo", system-ui;
+  background: linear-gradient(135deg, #ff7251 0%, 		#ffca7b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
