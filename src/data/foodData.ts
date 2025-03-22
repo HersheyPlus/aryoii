@@ -10,10 +10,10 @@ export interface FoodNutrition {
 const foods : FoodNutrition[] = [
     {
         name: "Overnight Oats",
-        fat: 7,
-        carbohydrates: 45,
-        protein: 32,
-        sugar: 10,  
+        fat: 7 ,
+        carbohydrates: 74 ,
+        protein: 38,
+        sugar: 18 ,  
         notice: "Almost sugar is natural sugar"      
     },
 ]
@@ -26,8 +26,9 @@ export { foods, approximateCalories }
 remain banana, strawberry, yogurth, honey
 
 banana : fat, carbohydrates, protein, sugar
+
 strawberry : fat, carbohydrates, protein, sugar
-yogurth : fat, carbohydrates, protein, sugar
+yoghurt : fat, carbohydrates, protein, sugar
 honey : fat, carbohydrates, protein, sugar
 
 
